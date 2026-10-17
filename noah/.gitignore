@@ -1,0 +1,9 @@
+# Private evidence must stay outside the public repository.
+private/
+unreviewed/
+*.evtx
+*.raw
+*.dmp
+*.exe
+*.bin
+*.zip

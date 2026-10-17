@@ -1,0 +1,23 @@
+2026-10-16 12:57:52	windows	br-win10-1	WinEventLog	10/16/2026 12:57:52 PM
+LogName=Microsoft-Windows-Sysmon/Operational
+SourceName=Microsoft-Windows-Sysmon
+EventCode=22
+EventType=4
+Type=Information
+ComputerName=br-win10-1.site.lan
+User=NOT_TRANSLATED
+Sid=S-1-5-18
+SidType=0
+TaskCategory=Dns query (rule: DnsQuery)
+OpCode=Info
+RecordNumber=5614457
+Keywords=None
+Message=Dns query:
+RuleName: 
+UtcTime: 2026-10-16 16:57:49.459
+ProcessGuid: {25a88e22-4451-6ad2-0000-0010a16ddd01}
+ProcessId: 11232
+QueryName: techiefly.com
+QueryStatus: 0
+QueryResults: ::ffff:76.223.65.112;
+Image: C:\Program Files\network_mgr.exe
