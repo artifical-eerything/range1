@@ -1,0 +1,492 @@
+[
+  {
+    "evidence_id": "EV-001",
+    "title": "Available log sources, page 1",
+    "original_filename": "EV-001_splunk-index-survey-pg1.png",
+    "public_path": "images/EV-001_splunk-index-survey-pg1.png",
+    "status": "included-unchanged",
+    "sha256": "15b7777157926c739b8d70420dc5e04b320991f70d8ff7495e7c99218685a6ef",
+    "original_register_sha256": "15b7777157926c739b8d70420dc5e04b320991f70d8ff7495e7c99218685a6ef",
+    "original_acquisition_note": "2026-10-17 ~09:14 CT"
+  },
+  {
+    "evidence_id": "EV-002",
+    "title": "Available log sources, page 2",
+    "original_filename": "EV-002_splunk-index-survey-pg2.png",
+    "public_path": "images/EV-002_splunk-index-survey-pg2.png",
+    "status": "included-unchanged",
+    "sha256": "7dcfcf72e111e1b70ae5f1d6a6058fb7fb360002e6593916376ae3070c6961de",
+    "original_register_sha256": "7dcfcf72e111e1b70ae5f1d6a6058fb7fb360002e6593916376ae3070c6961de",
+    "original_acquisition_note": "2026-10-17 ~09:17 CT"
+  },
+  {
+    "evidence_id": "EV-003",
+    "title": "Topology screenshot not available",
+    "original_filename": "",
+    "public_path": "",
+    "status": "missing-original",
+    "sha256": "",
+    "original_register_sha256": "",
+    "original_acquisition_note": "_pending re-send_"
+  },
+  {
+    "evidence_id": "EV-004",
+    "title": "Risk alerts prioritize a workstation",
+    "original_filename": "EV-004_splunk-risk-notables-24h.png",
+    "public_path": "images/EV-004_splunk-risk-notables-24h.png",
+    "status": "included-unchanged",
+    "sha256": "0277d0bd61b4e6a66a7ad87516080852ee7d96d26243512950aa63946e05986f",
+    "original_register_sha256": "0277d0bd61b4e6a66a7ad87516080852ee7d96d26243512950aa63946e05986f",
+    "original_acquisition_note": "2026-10-17 ~09:2x CT"
+  },
+  {
+    "evidence_id": "EV-005",
+    "title": "Workstation process-event volume",
+    "original_filename": "EV-005_brwin10-1_proc-create-oct16-volume.png",
+    "public_path": "images/EV-005_brwin10-1_proc-create-oct16-volume.png",
+    "status": "included-unchanged",
+    "sha256": "f4a17262628dbfaa7eeb65d1bff4f9798a77e07d6a692ebc75d334900b420a60",
+    "original_register_sha256": "f4a17262628dbfaa7eeb65d1bff4f9798a77e07d6a692ebc75d334900b420a60",
+    "original_acquisition_note": "2026-10-17 ~09:3x CT"
+  },
+  {
+    "evidence_id": "EV-006",
+    "title": "Early Security Onion alert overview",
+    "original_filename": "EV-006_securityonion-alerts-24h.png",
+    "public_path": "images/EV-006_securityonion-alerts-24h.png",
+    "status": "included-unchanged",
+    "sha256": "71f3814314aeb752c358f898c40d9a07a47a3f5d9beda67a43767c9241dd13dd",
+    "original_register_sha256": "71f3814314aeb752c358f898c40d9a07a47a3f5d9beda67a43767c9241dd13dd",
+    "original_acquisition_note": "2026-10-17 ~09:4x CT"
+  },
+  {
+    "evidence_id": "EV-007",
+    "title": "SSH alert drilldown",
+    "original_filename": "EV-007_so-ssh-login-failure-drilldown.png",
+    "public_path": "images/EV-007_so-ssh-login-failure-drilldown.png",
+    "status": "included-unchanged",
+    "sha256": "0df17fd8c6ca5e0042173e9a01fa020475995a9eb14f40a3dff07a947e9bbb68",
+    "original_register_sha256": "0df17fd8c6ca5e0042173e9a01fa020475995a9eb14f40a3dff07a947e9bbb68",
+    "original_acquisition_note": "2026-10-17 ~09:4x CT"
+  },
+  {
+    "evidence_id": "EV-008",
+    "title": "Account activity across hosts",
+    "original_filename": "EV-008_charleyfritz-hosts.png",
+    "public_path": "images/EV-008_charleyfritz-hosts.png",
+    "status": "included-unchanged",
+    "sha256": "815ff5535caaa0e7e5bfc8affca8e5c8074fb91a34d7982767bf8c2a06a3b4bc",
+    "original_register_sha256": "815ff5535caaa0e7e5bfc8affca8e5c8074fb91a34d7982767bf8c2a06a3b4bc",
+    "original_acquisition_note": "2026-10-17 ~09:5x CT"
+  },
+  {
+    "evidence_id": "EV-009",
+    "title": "Reporting-user account lookup",
+    "original_filename": "EV-009_ad-lookup-charleyfritz.png",
+    "public_path": "images/EV-009_ad-lookup-charleyfritz.png",
+    "status": "included-unchanged",
+    "sha256": "596ddb9c9d52debb42352a2e2d4c650c539c7e2b856abb5cadd878a6e7d5b8ec",
+    "original_register_sha256": "596ddb9c9d52debb42352a2e2d4c650c539c7e2b856abb5cadd878a6e7d5b8ec",
+    "original_acquisition_note": "2026-10-17 ~10:4x CT"
+  },
+  {
+    "evidence_id": "EV-010",
+    "title": "An activity-count lead, not a finding",
+    "original_filename": "EV-010_charleyfritz-activity-spike-oct16.png",
+    "public_path": "images/EV-010_charleyfritz-activity-spike-oct16.png",
+    "status": "included-unchanged",
+    "sha256": "36850607210e3c38aca4d7a598fd9c2b9afa78f94c8f2024bde8471d92a124ab",
+    "original_register_sha256": "36850607210e3c38aca4d7a598fd9c2b9afa78f94c8f2024bde8471d92a124ab",
+    "original_acquisition_note": "2026-10-17 ~10:5x CT"
+  },
+  {
+    "evidence_id": "EV-011",
+    "title": "Alert-rule breakdown",
+    "original_filename": "EV-011_brwin10-1_notable-breakdown.png",
+    "public_path": "images/EV-011_brwin10-1_notable-breakdown.png",
+    "status": "included-unchanged",
+    "sha256": "f9d1c4a2d808249037d540eeb8449d7e62db06228dce47eeb9e57dece0b3ebc8",
+    "original_register_sha256": "f9d1c4a2d808249037d540eeb8449d7e62db06228dce47eeb9e57dece0b3ebc8",
+    "original_acquisition_note": "2026-10-17 ~11:0x CT"
+  },
+  {
+    "evidence_id": "EV-012",
+    "title": "Recon table containing a credential",
+    "original_filename": "EV-012_brwin10-1_recon-parent-table.png",
+    "public_path": "",
+    "status": "withheld-credential",
+    "sha256": "acd5ec57d21bce959de1246a0c01dd7e3ffcd266869f13b317b2a5e90633bfd1",
+    "original_register_sha256": "acd5ec57d21bce959de1246a0c01dd7e3ffcd266869f13b317b2a5e90633bfd1",
+    "original_acquisition_note": "2026-10-17 ~11:09 CT"
+  },
+  {
+    "evidence_id": "EV-013",
+    "title": "Discovery tools with non-CMD parents",
+    "original_filename": "EV-013_brwin10-1_recon-noncmd-parents.png",
+    "public_path": "images/EV-013_brwin10-1_recon-noncmd-parents.png",
+    "status": "included-unchanged",
+    "sha256": "58195c7a5421c5b6c509a64a66c94d8b3279a01d137b1a2b71f797911620095f",
+    "original_register_sha256": "58195c7a5421c5b6c509a64a66c94d8b3279a01d137b1a2b71f797911620095f",
+    "original_acquisition_note": "2026-10-17 ~11:1x CT"
+  },
+  {
+    "evidence_id": "EV-014",
+    "title": "Workstation-registration HTTP request",
+    "original_filename": "EV-014_brwin10-1_proxy-registration.png",
+    "public_path": "images/EV-014_brwin10-1_proxy-registration.png",
+    "status": "included-unchanged",
+    "sha256": "244aa81cb85160bd0ddfe1a32be036b1d004a8573a7eacc520db5e0a397f0e7e",
+    "original_register_sha256": "244aa81cb85160bd0ddfe1a32be036b1d004a8573a7eacc520db5e0a397f0e7e",
+    "original_acquisition_note": "2026-10-17 ~11:2x CT"
+  },
+  {
+    "evidence_id": "EV-015",
+    "title": "Java/CMD table containing a credential",
+    "original_filename": "EV-015_brwin10-1_cmd-java-parent.png",
+    "public_path": "",
+    "status": "withheld-credential",
+    "sha256": "0753764829888ab4337da2fd48309b010180893ae552085d67615cb962a9d17f",
+    "original_register_sha256": "0753764829888ab4337da2fd48309b010180893ae552085d67615cb962a9d17f",
+    "original_acquisition_note": "2026-10-17 ~11:2x CT"
+  },
+  {
+    "evidence_id": "EV-016",
+    "title": "Visible routine startup commands",
+    "original_filename": "EV-016_brwin10-1_1003-process-parents.png",
+    "public_path": "images/EV-016_brwin10-1_1003-process-parents.png",
+    "status": "included-unchanged",
+    "sha256": "0ae9489b8635c163baeda80e074a206bb5af0295bd255005812bb9d7dffe1df1",
+    "original_register_sha256": "0ae9489b8635c163baeda80e074a206bb5af0295bd255005812bb9d7dffe1df1",
+    "original_acquisition_note": "2026-10-17 ~11:3x CT"
+  },
+  {
+    "evidence_id": "EV-017",
+    "title": "WdBoot to PowerShell and discovery tools",
+    "original_filename": "EV-017_brwin10-1_wdboot-process-tree.png",
+    "public_path": "images/EV-017_brwin10-1_wdboot-process-tree.png",
+    "status": "included-unchanged",
+    "sha256": "d9b328e2f5a4016d2e6974b7b2b5f7826865a8ef44b4f9501460f0202cae30a5",
+    "original_register_sha256": "d9b328e2f5a4016d2e6974b7b2b5f7826865a8ef44b4f9501460f0202cae30a5",
+    "original_acquisition_note": "2026-10-17 ~11:4x CT"
+  },
+  {
+    "evidence_id": "EV-018",
+    "title": "WdBoot execution as SYSTEM",
+    "original_filename": "EV-018_brwin10-1_wdboot-execution-hash.png",
+    "public_path": "images/EV-018_brwin10-1_wdboot-execution-hash.png",
+    "status": "included-unchanged",
+    "sha256": "a2e47cc195ee384c7b424b56b1511e71b7eb0baa218e08989820bdab1dfea441",
+    "original_register_sha256": "a2e47cc195ee384c7b424b56b1511e71b7eb0baa218e08989820bdab1dfea441",
+    "original_acquisition_note": "2026-10-17 ~11:4x CT"
+  },
+  {
+    "evidence_id": "EV-019",
+    "title": "Earlier network_mgr executions",
+    "original_filename": "EV-019_brwin10-1_network-mgr-execution-timeline.png",
+    "public_path": "images/EV-019_brwin10-1_network-mgr-execution-timeline.png",
+    "status": "included-unchanged",
+    "sha256": "0066453d7369682de3565b269ad8c076f2afaddb10e2a0a2513229170758eef2",
+    "original_register_sha256": "0066453d7369682de3565b269ad8c076f2afaddb10e2a0a2513229170758eef2",
+    "original_acquisition_note": "2026-10-17 ~11:5x CT"
+  },
+  {
+    "evidence_id": "EV-020",
+    "title": "Early proxy search, partial display",
+    "original_filename": "EV-020_brwin10-1_proxy-before-execution.png",
+    "public_path": "images/EV-020_brwin10-1_proxy-before-execution.png",
+    "status": "included-unchanged",
+    "sha256": "556edecc8de259f638dbe9bb087b1db81d4c0fed3beaa9100582ceb9e6963fec",
+    "original_register_sha256": "556edecc8de259f638dbe9bb087b1db81d4c0fed3beaa9100582ceb9e6963fec",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:02 UTC"
+  },
+  {
+    "evidence_id": "EV-021",
+    "title": "Early proxy search summarized",
+    "original_filename": "EV-021_brwin10-1_proxy-summary.png",
+    "public_path": "images/EV-021_brwin10-1_proxy-summary.png",
+    "status": "included-unchanged",
+    "sha256": "3751761a89b1b497f7044ac4c8d5268e017594254b9759579cc3992e90813787",
+    "original_register_sha256": "3751761a89b1b497f7044ac4c8d5268e017594254b9759579cc3992e90813787",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:05 UTC"
+  },
+  {
+    "evidence_id": "EV-022",
+    "title": "Timeline view containing a credential",
+    "original_filename": "EV-022_brwin10-1_timeline-command-review.png",
+    "public_path": "",
+    "status": "withheld-credential",
+    "sha256": "a7b57bddf39eb6c0787deb4c9dd57e6b7f99071db9f72acb2f816d76793f24d2",
+    "original_register_sha256": "a7b57bddf39eb6c0787deb4c9dd57e6b7f99071db9f72acb2f816d76793f24d2",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:13 UTC"
+  },
+  {
+    "evidence_id": "EV-023",
+    "title": "Puppet maintenance context",
+    "original_filename": "EV-023_brwin10-1_puppet-network-mgr.png",
+    "public_path": "images/EV-023_brwin10-1_puppet-network-mgr.png",
+    "status": "included-unchanged",
+    "sha256": "693328fe8935c0c2b4008db87b38b4c8fa5e8dae4f389c7474221280e39b0d06",
+    "original_register_sha256": "693328fe8935c0c2b4008db87b38b4c8fa5e8dae4f389c7474221280e39b0d06",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:20 UTC"
+  },
+  {
+    "evidence_id": "EV-024",
+    "title": "Credential-bearing script-block text",
+    "original_filename": "EV-024_brwin10-1_powershell-scriptblocks.txt",
+    "public_path": "",
+    "status": "withheld-credential",
+    "sha256": "88a3f8f719ae12adb352e8068d0830472cc0256f8c15516c637ff9a7c6325b44",
+    "original_register_sha256": "88a3f8f719ae12adb352e8068d0830472cc0256f8c15516c637ff9a7c6325b44",
+    "original_acquisition_note": "Original copy/capture time unknown; preserved 2026-10-17 16:25 UTC"
+  },
+  {
+    "evidence_id": "EV-025",
+    "title": "WdBoot child commands containing a credential",
+    "original_filename": "EV-025_brwin10-1_wdboot-auditpol-parent.png",
+    "public_path": "",
+    "status": "withheld-credential",
+    "sha256": "16275880f2bbad502541dea5d44ca08b3abc7fafd088f071e7e905a0eb792979",
+    "original_register_sha256": "16275880f2bbad502541dea5d44ca08b3abc7fafd088f071e7e905a0eb792979",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:27 UTC"
+  },
+  {
+    "evidence_id": "EV-026",
+    "title": "Pre-existing network_mgr file metadata",
+    "original_filename": "EV-026_brwin10-1_network-mgr-file-metadata.png",
+    "public_path": "images/EV-026_brwin10-1_network-mgr-file-metadata.png",
+    "status": "included-unchanged",
+    "sha256": "3284ded23337d8afbcc4234d91e11c4d0cd269bd297646a9cc3a3bc3f6897f84",
+    "original_register_sha256": "3284ded23337d8afbcc4234d91e11c4d0cd269bd297646a9cc3a3bc3f6897f84",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:46 UTC"
+  },
+  {
+    "evidence_id": "EV-027",
+    "title": "WdBoot file metadata",
+    "original_filename": "EV-027_brwin10-1_wdboot-file-metadata.png",
+    "public_path": "images/EV-027_brwin10-1_wdboot-file-metadata.png",
+    "status": "included-unchanged",
+    "sha256": "256925b3503fc726c441728f658bc9d6d23e26bc2d374b9136238adfda7dcfba",
+    "original_register_sha256": "256925b3503fc726c441728f658bc9d6d23e26bc2d374b9136238adfda7dcfba",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:49 UTC"
+  },
+  {
+    "evidence_id": "EV-028",
+    "title": "The process that wrote WdBoot",
+    "original_filename": "EV-028_brwin10-1_wdboot-file-writer.png",
+    "public_path": "images/EV-028_brwin10-1_wdboot-file-writer.png",
+    "status": "included-unchanged",
+    "sha256": "b5423ce3d85105a62692b580a0979fce1e1b1ec1b18fa62900f579a77f62d13a",
+    "original_register_sha256": "b5423ce3d85105a62692b580a0979fce1e1b1ec1b18fa62900f579a77f62d13a",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:51 UTC"
+  },
+  {
+    "evidence_id": "EV-029",
+    "title": "Proxy rows around payload placement",
+    "original_filename": "EV-029_brwin10-1_proxy-drop-window.txt",
+    "public_path": "records/EV-029_brwin10-1_proxy-drop-window.txt",
+    "status": "included-unchanged",
+    "sha256": "76466bdceee47888c1d77674e8d0baa612d85d5dbd6c674d683719c5249c1d14",
+    "original_register_sha256": "76466bdceee47888c1d77674e8d0baa612d85d5dbd6c674d683719c5249c1d14",
+    "original_acquisition_note": "Original copy time unknown; preserved 2026-10-17 16:54 UTC"
+  },
+  {
+    "evidence_id": "EV-030",
+    "title": "Pasted DNS results",
+    "original_filename": "EV-030_techiefly-dns-pasted-results.txt",
+    "public_path": "records/EV-030_techiefly-dns-pasted-results.txt",
+    "status": "included-unchanged",
+    "sha256": "3ee148e1da3afc53d0816b08b47dabf8fbabd38dbcbf478991086c66f8932b45",
+    "original_register_sha256": "3ee148e1da3afc53d0816b08b47dabf8fbabd38dbcbf478991086c66f8932b45",
+    "original_acquisition_note": "Original copy time unknown; transcribed/preserved 2026-10-17 16:57 UTC"
+  },
+  {
+    "evidence_id": "EV-031",
+    "title": "Complete Sysmon DNS event",
+    "original_filename": "EV-031_techiefly-sysmon-dns-pasted-event.txt",
+    "public_path": "records/EV-031_techiefly-sysmon-dns-pasted-event.txt",
+    "status": "included-unchanged",
+    "sha256": "b9ad13b4f1f33d8921fc1fa517b87c1d9bdca304a6fc73b38dd26b71eac733b9",
+    "original_register_sha256": "b9ad13b4f1f33d8921fc1fa517b87c1d9bdca304a6fc73b38dd26b71eac733b9",
+    "original_acquisition_note": "Original copy time unknown; transcribed/preserved 2026-10-17 16:58 UTC"
+  },
+  {
+    "evidence_id": "EV-032",
+    "title": "Screenshot of the DNS event",
+    "original_filename": "EV-032_techiefly-sysmon-dns-screenshot.png",
+    "public_path": "images/EV-032_techiefly-sysmon-dns-screenshot.png",
+    "status": "included-unchanged",
+    "sha256": "3ac37b23faf21464d17bedd358147bc33c699209ef855f96c82e9f3107c49b37",
+    "original_register_sha256": "3ac37b23faf21464d17bedd358147bc33c699209ef855f96c82e9f3107c49b37",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:58 UTC"
+  },
+  {
+    "evidence_id": "EV-033",
+    "title": "ZIP upload command in parsed logs",
+    "original_filename": "EV-033_zip-upload-command.png",
+    "public_path": "images/EV-033_zip-upload-command.png",
+    "status": "included-unchanged",
+    "sha256": "b2f014c1ebb90baa4fd5386004c9dcaca6c1f54d27cbabc475d844d91453a2e8",
+    "original_register_sha256": "b2f014c1ebb90baa4fd5386004c9dcaca6c1f54d27cbabc475d844d91453a2e8",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 16:59 UTC"
+  },
+  {
+    "evidence_id": "EV-034",
+    "title": "Filename-based workstation scope",
+    "original_filename": "EV-034_wdboot-cross-host-scope.png",
+    "public_path": "images/EV-034_wdboot-cross-host-scope.png",
+    "status": "included-unchanged",
+    "sha256": "3f2cd0fbc10771544bca22ffa8d4d10e57d69f6f32afa59c9735c8f0bf65b331",
+    "original_register_sha256": "3f2cd0fbc10771544bca22ffa8d4d10e57d69f6f32afa59c9735c8f0bf65b331",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 17:08 UTC"
+  },
+  {
+    "evidence_id": "EV-035",
+    "title": "Two POSTs, two responses",
+    "original_filename": "EV-035_brwin10-1_olapdatabase-posts.png",
+    "public_path": "images/EV-035_brwin10-1_olapdatabase-posts.png",
+    "status": "included-unchanged",
+    "sha256": "6674cc3ddf46006b66e0b700beccb6bbc6ee649fb836dba4193b8a15fa660ce7",
+    "original_register_sha256": "6674cc3ddf46006b66e0b700beccb6bbc6ee649fb836dba4193b8a15fa660ce7",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 17:10 UTC"
+  },
+  {
+    "evidence_id": "EV-036",
+    "title": "Archive and two upload selections",
+    "original_filename": "EV-036_archive-and-upload-pasted-events.txt",
+    "public_path": "records/EV-036_archive-and-upload-pasted-events.txt",
+    "status": "included-unchanged",
+    "sha256": "943826da057534190ea5b946b587c931a593cf93bab1ad4a2be0af270dd95476",
+    "original_register_sha256": "943826da057534190ea5b946b587c931a593cf93bab1ad4a2be0af270dd95476",
+    "original_acquisition_note": "Original copy time unknown; preserved 2026-10-17 17:16 UTC"
+  },
+  {
+    "evidence_id": "EV-037",
+    "title": "Discovery output staging commands",
+    "original_filename": "EV-037_recon-staging-pasted-events.txt",
+    "public_path": "records/EV-037_recon-staging-pasted-events.txt",
+    "status": "included-unchanged",
+    "sha256": "e3411dfdaff408d3271a6f0aa41d5d14c28bf32997e2a9a0c10295d0ad1b93cb",
+    "original_register_sha256": "e3411dfdaff408d3271a6f0aa41d5d14c28bf32997e2a9a0c10295d0ad1b93cb",
+    "original_acquisition_note": "Original copy time unknown; preserved 2026-10-17 17:19 UTC"
+  },
+  {
+    "evidence_id": "EV-038",
+    "title": "Analyst FileFinder search parameters",
+    "original_filename": "EV-038_filefinder-expanded-parameters.png",
+    "public_path": "images/EV-038_filefinder-expanded-parameters.png",
+    "status": "included-unchanged",
+    "sha256": "773857e43f52135cbe8a0a223af81074ae5b350f9e61ee91275978e12aa4206e",
+    "original_register_sha256": "773857e43f52135cbe8a0a223af81074ae5b350f9e61ee91275978e12aa4206e",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 17:35 UTC"
+  },
+  {
+    "evidence_id": "EV-039",
+    "title": "FileFinder returned no artifacts",
+    "original_filename": "EV-039_filefinder-zero-results.png",
+    "public_path": "images/EV-039_filefinder-zero-results.png",
+    "status": "included-unchanged",
+    "sha256": "c9ed9ff0932dcba64357781e8679f673b21e29783d1b3887d37422b5358f426d",
+    "original_register_sha256": "c9ed9ff0932dcba64357781e8679f673b21e29783d1b3887d37422b5358f426d",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 17:35 UTC"
+  },
+  {
+    "evidence_id": "EV-040",
+    "title": "No matching deletion events",
+    "original_filename": "EV-040_staging-deletion-search-zero.png",
+    "public_path": "images/EV-040_staging-deletion-search-zero.png",
+    "status": "included-unchanged",
+    "sha256": "ba4bd295b4256cccfa386ac653c6e320f60872b752dc31c97d1bd8cdf77aa54f",
+    "original_register_sha256": "ba4bd295b4256cccfa386ac653c6e320f60872b752dc31c97d1bd8cdf77aa54f",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 21:00 UTC"
+  },
+  {
+    "evidence_id": "EV-041",
+    "title": "Audit and firewall command sequence",
+    "original_filename": "EV-041_audit-firewall-pasted-events.txt",
+    "public_path": "records/EV-041_audit-firewall-pasted-events.txt",
+    "status": "included-unchanged",
+    "sha256": "ccb82c300e9ae99eb2e8c0cd51b31879c114df395232dfe2ef9a5c28828e4f12",
+    "original_register_sha256": "ccb82c300e9ae99eb2e8c0cd51b31879c114df395232dfe2ef9a5c28828e4f12",
+    "original_acquisition_note": "Original copy time unknown; preserved 2026-10-17 21:00 UTC"
+  },
+  {
+    "evidence_id": "EV-042",
+    "title": "Full proxy POST event view",
+    "original_filename": "EV-042_proxy-posts-full-log-view.png",
+    "public_path": "images/EV-042_proxy-posts-full-log-view.png",
+    "status": "included-unchanged",
+    "sha256": "aad60ca860c209ff561ac0d308ef813479539a7e917a704e47fdb217c14cb1b7",
+    "original_register_sha256": "aad60ca860c209ff561ac0d308ef813479539a7e917a704e47fdb217c14cb1b7",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 21:08 UTC"
+  },
+  {
+    "evidence_id": "EV-043",
+    "title": "Completed PCAP jobs",
+    "original_filename": "EV-043_pcap-completed-jobs.png",
+    "public_path": "images/EV-043_pcap-completed-jobs.png",
+    "status": "included-unchanged",
+    "sha256": "b3dc91fdd71ad66624d31c9ac814aaa9ca41cb542a8ec39f0f5fdc3c57d9d977",
+    "original_register_sha256": "b3dc91fdd71ad66624d31c9ac814aaa9ca41cb542a8ec39f0f5fdc3c57d9d977",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 21:20 UTC"
+  },
+  {
+    "evidence_id": "EV-044",
+    "title": "Job 1002 returned zero packets",
+    "original_filename": "EV-044_pcap-job-1002-zero-packets.png",
+    "public_path": "images/EV-044_pcap-job-1002-zero-packets.png",
+    "status": "included-unchanged",
+    "sha256": "959a5999b169af4773a7a1775038d072fd6baab5935cada1b292541211778e33",
+    "original_register_sha256": "959a5999b169af4773a7a1775038d072fd6baab5935cada1b292541211778e33",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 21:20 UTC"
+  },
+  {
+    "evidence_id": "EV-045",
+    "title": "The incorrect time filter was identified",
+    "original_filename": "EV-045_pcap-job-1002-filter-details.png",
+    "public_path": "images/EV-045_pcap-job-1002-filter-details.png",
+    "status": "included-unchanged",
+    "sha256": "03e2cc9fe62f1c8a0fb1ce6bfa8e10a3faf4cebb1ec969383a4fb5bbab5cb1e9",
+    "original_register_sha256": "03e2cc9fe62f1c8a0fb1ce6bfa8e10a3faf4cebb1ec969383a4fb5bbab5cb1e9",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 21:22 UTC"
+  },
+  {
+    "evidence_id": "EV-046",
+    "title": "Corrected PCAP job bounds",
+    "original_filename": "EV-046_pcap-job-1003-corrected-filter.png",
+    "public_path": "images/EV-046_pcap-job-1003-corrected-filter.png",
+    "status": "included-unchanged",
+    "sha256": "bb795767aecfbf82ac6d8cd08f695598311d7cb67e79e756c257363fc0a59652",
+    "original_register_sha256": "bb795767aecfbf82ac6d8cd08f695598311d7cb67e79e756c257363fc0a59652",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 21:25 UTC"
+  },
+  {
+    "evidence_id": "EV-047",
+    "title": "Proxy log directory through SFTP",
+    "original_filename": "EV-047_proxy-squid-log-directory.png",
+    "public_path": "images/EV-047_proxy-squid-log-directory.png",
+    "status": "included-unchanged",
+    "sha256": "1dac3ed91e09a4c4b750f7ea3ad15aeb900503aa104d4957afd2a833ee6acd9d",
+    "original_register_sha256": "1dac3ed91e09a4c4b750f7ea3ad15aeb900503aa104d4957afd2a833ee6acd9d",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 21:36 UTC"
+  },
+  {
+    "evidence_id": "EV-048",
+    "title": "Partial configuration paste kept local",
+    "original_filename": "EV-048_partial-squid-config-pasted.txt",
+    "public_path": "",
+    "status": "local-only-supplement",
+    "sha256": "34ed3894924ee623332032771ba989eca0bde955419f666ce37eaa96657251b5",
+    "original_register_sha256": "34ed3894924ee623332032771ba989eca0bde955419f666ce37eaa96657251b5",
+    "original_acquisition_note": "Original copy time unknown; preserved 2026-10-17 21:40 UTC"
+  },
+  {
+    "evidence_id": "EV-049",
+    "title": "Logging format and byte directions",
+    "original_filename": "EV-049_squid-active-logformat-query.png",
+    "public_path": "images/EV-049_squid-active-logformat-query.png",
+    "status": "included-unchanged",
+    "sha256": "6b2d9c58e322f523e7e9e7a9e6a5ff263789a6bf38e5495e88355cdeff5cfbe2",
+    "original_register_sha256": "6b2d9c58e322f523e7e9e7a9e6a5ff263789a6bf38e5495e88355cdeff5cfbe2",
+    "original_acquisition_note": "Screenshot capture time unknown; preserved 2026-10-17 21:43 UTC"
+  }
+]

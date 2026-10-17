@@ -1,0 +1,131 @@
+Skip Navigation >
+App: Search & Reporting
+Administrator
+Messages
+Settings
+Activity
+Help
+Find
+SearchAnalyticsDatasetsReportsAlertsDashboards
+ Search & Reporting
+Save AsClose
+New Search
+
+during Fri, Oct 16, 2026
+Complete 38 events (10/16/26 12:57:00.000 PM to 10/16/26 1:05:00.000 PM) No Event Sampling JobVerbose Mode
+Events (38)
+Patterns
+Statistics (38)
+Visualization
+100 Per Page
+Format
+Preview
+_time	EventCode	Details
+_time	EventCode	Details
+2026-10-16 13:00:03	4104	Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; mkdir $tmpfile; echo " "}
+
+ScriptBlock ID: 0ed829d3-4a94-4bff-a3ae-ff31ae5acca4
+Path:
+2026-10-16 13:00:03	4104	Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; mkdir $tmpfile; echo " "}
+
+ScriptBlock ID: da1991db-7e29-499b-b399-92649e859df5
+Path:
+2026-10-16 13:00:03	1	"C:\Windows\system32\quser.exe"
+2026-10-16 13:00:03	1	powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; mkdir $tmpfile; echo \" \"}
+2026-10-16 13:01:05	1	powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; fsutil volume diskfree c: > \"$tmpfile\disk.txt\"; echo \" \"}
+2026-10-16 13:01:06	1	"C:\Windows\system32\fsutil.exe" volume diskfree c:
+2026-10-16 13:01:06	1	"C:\Windows\system32\quser.exe"
+2026-10-16 13:01:06	4104	Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; fsutil volume diskfree c: > "$tmpfile\disk.txt"; echo " "}
+
+ScriptBlock ID: 33104940-7621-4f99-8624-fae2e30769de
+Path:
+2026-10-16 13:01:06	4104	Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; fsutil volume diskfree c: > "$tmpfile\disk.txt"; echo " "}
+
+ScriptBlock ID: bb0c778b-004e-44bd-a4c4-de38e5a97112
+Path:
+2026-10-16 13:01:36	4104	Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; tasklist /v > "$tmpfile\task-list.txt"; echo " "}
+
+ScriptBlock ID: d6670ea2-e1b5-48ab-b0cf-832b40285259
+Path:
+2026-10-16 13:01:36	4104	Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; tasklist /v > "$tmpfile\task-list.txt"; echo " "}
+
+ScriptBlock ID: a5541b1f-0fef-4231-ad66-57559e350e20
+Path:
+2026-10-16 13:01:36	1	"C:\Windows\system32\quser.exe"
+2026-10-16 13:01:36	1	powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; tasklist /v > \"$tmpfile\task-list.txt\"; echo \" \"}
+2026-10-16 13:01:37	1	"C:\Windows\system32\tasklist.exe" /v
+2026-10-16 13:02:07	1	powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; query user > \"$tmpfile\users.txt\"; echo \" \"}
+2026-10-16 13:02:08	4104	Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; query user > "$tmpfile\users.txt"; echo " "}
+
+ScriptBlock ID: cd6ccdc7-8b78-42ef-8247-6b908eae3fc0
+Path:
+2026-10-16 13:02:08	4104	Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; query user > "$tmpfile\users.txt"; echo " "}
+
+ScriptBlock ID: 321927b1-605f-4274-ba50-bf6b9893c831
+Path:
+2026-10-16 13:02:08	1	"C:\Windows\system32\query.exe" user
+2026-10-16 13:02:08	1	"C:\Windows\system32\quser.exe"
+2026-10-16 13:03:09	1	powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; schtasks /query /v /fo csv > \"$tmpfile\scheduled-tasks.txt\"; echo \" \"}
+2026-10-16 13:03:10	4104	Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; schtasks /query /v /fo csv > "$tmpfile\scheduled-tasks.txt"; echo " "}
+
+ScriptBlock ID: b78553c8-356d-4e91-bcbd-e5cd59a308fe
+Path:
+2026-10-16 13:03:10	4104	Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; schtasks /query /v /fo csv > "$tmpfile\scheduled-tasks.txt"; echo " "}
+
+ScriptBlock ID: 962e84bd-825f-483a-8aa4-6404efcf2aba
+Path:
+2026-10-16 13:03:10	1	"C:\Windows\system32\schtasks.exe" /query /v /fo csv
+2026-10-16 13:03:10	1	"C:\Windows\system32\quser.exe"
+2026-10-16 13:03:50	4104	Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; sc.exe  query type=service state=all > "$tmpfile\services.txt"; echo " "}
+
+ScriptBlock ID: 6bd6658b-6100-4be8-b1d8-adc5702798b1
+Path:
+2026-10-16 13:03:50	4104	Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; sc.exe  query type=service state=all > "$tmpfile\services.txt"; echo " "}
+
+ScriptBlock ID: 8794f565-6984-420e-8941-ca6dea784bd5
+Path:
+2026-10-16 13:03:50	1	"C:\Windows\system32\sc.exe" query type=service state=all
+2026-10-16 13:03:50	1	"C:\Windows\system32\quser.exe"
+2026-10-16 13:03:50	1	powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; sc.exe "" query type=service state=all > \"$tmpfile\services.txt\"; echo \" \"}
+2026-10-16 13:04:21	4104	Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; wmic service get name,startname > "$tmpdir\services-wmi.txt"; echo " "}
+
+ScriptBlock ID: 565bb168-d230-4d56-821b-ac28c9c042e9
+Path:
+2026-10-16 13:04:21	4104	Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; wmic service get name,startname > "$tmpdir\services-wmi.txt"; echo " "}
+
+ScriptBlock ID: b87a7d87-736e-4150-a7d9-d8e4c54d0869
+Path:
+2026-10-16 13:04:21	1	"C:\Windows\System32\Wbem\WMIC.exe" service get name,startname
+2026-10-16 13:04:21	1	"C:\Windows\system32\quser.exe"
+2026-10-16 13:04:21	1	powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; wmic service get name,startname > \"$tmpdir\services-wmi.txt\"; echo \" \"}
+2026-10-16 13:04:53	1	powershell &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split(\"`n>\")[2].split()[0]; $tmpfile = \"C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp\"; Compress-Archive -Path $tmpfile -DestinationPath \"$tmpfile.zip\"; echo \"success\" }
+2026-10-16 13:04:54	4104	Creating Scriptblock text (1 of 1):
+{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; Compress-Archive -Path $tmpfile -DestinationPath "$tmpfile.zip"; echo "success" }
+
+ScriptBlock ID: 25b8d24e-afd9-4947-991a-c4e268a08d84
+Path:
+2026-10-16 13:04:54	4104	Creating Scriptblock text (1 of 1):
+&{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; Compress-Archive -Path $tmpfile -DestinationPath "$tmpfile.zip"; echo "success" }
+
+ScriptBlock ID: c791003c-8e5d-4333-a21b-56a493f4859c
+Path:
+2026-10-16 13:04:54	1	"C:\Windows\system32\quser.exe"
+Details = Creating Scriptblock text (1 of 1): &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; query user > "$tmpfile\users.txt"; echo " "} ScriptBlock ID: 321927b1-605f-4274-ba50-bf6b9893c831 Path:
+Exclude from results
+2026-10-16 13:02:08.000 to 2026-10-16 13:02:08.001
+Details = Creating Scriptblock text (1 of 1): &{$command = quser; $string = Out-String -inputobject $command; $username = $string.split("`n>")[2].split()[0]; $tmpfile = "C:\users\$username\appdata\local\temp\ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789.tmp"; query user > "$tmpfile\users.txt"; echo " "} ScriptBlock ID: 321927b1-605f-4274-ba50-bf6b9893c831 Path:
+View events

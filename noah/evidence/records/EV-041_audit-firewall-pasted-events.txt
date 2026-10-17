@@ -1,0 +1,472 @@
+Skip Navigation >
+App: Search & Reporting
+Administrator
+Messages
+Settings
+Activity
+Help
+Find
+SearchAnalyticsDatasetsReportsAlertsDashboards
+ Search & Reporting
+Save AsClose
+New Search
+
+Date time range
+Complete 34 events (10/16/26 12:58:00.000 PM to 10/16/26 1:10:00.000 PM) No Event Sampling JobVerbose Mode
+Events (34)
+Patterns
+Statistics (34)
+Visualization
+Format Timeline
+ Zoom Out  Zoom to Selection  Deselect1 minute per column
+List
+ Format 
+50 Per Page
+Hide FieldsAll Fields
+SELECTED FIELDS
+ahost 1
+asource 3
+asourcetype 1
+INTERESTING FIELDS
+acategory 5
+aCommandLine 12
+aCompany 1
+aComputerName 1
+aCurrentDirectory 1
+aDescription 3
+adest 1
+advc 1
+advc_nt_host 1
+aevent_creation_time 12
+aevent_description 3
+#event_id 23
+#event_type 2
+#EventCode 5
+#EventType 3
+aeventtype 10
+afile_company 1
+afile_description 3
+afile_directory 1
+afile_name 3
+afile_product 1
+afile_version 2
+aFileVersion 2
+aHashes 3
+ahost_fqdn 1
+ahost_name 1
+#id 34
+aImage 3
+aindex 1
+aIntegrityLevel 1
+aKeywords 2
+#linecount 9
+aLogName 3
+aLogonGuid 1
+aLogonId 1
+aMessage 34
+aOpCode 3
+aoriginal_file_name 3
+aOriginalFileName 3
+aParentCommandLine 6
+aParentImage 2
+aParentProcessGuid 6
+#ParentProcessId 6
+aprocess_command_line 12
+aprocess_guid 12
+#process_id 15
+aprocess_integrity_level 1
+aprocess_name 3
+aprocess_parent_command_line 6
+aprocess_parent_guid 6
+#process_parent_id 7
+aprocess_parent_name 2
+aprocess_parent_path 2
+aprocess_path 3
+aProcessGuid 12
+#ProcessId 12
+aProduct 1
+apunct 11
+#RecordNumber 34
+aScriptBlock_ID 11
+aseverity 1
+#severity_id 3
+aSid 1
+#SidType 1
+asignature 4
+#signature_id 5
+aSourceName 3
+asplunk_server 1
+atag 11
+atag::eventtype 10
+atarget_process_name 1
+aTaskCategory 5
+#TerminalSessionId 1
+aType 2
+aUser 2
+auser_logon_guid 1
+auser_logon_id 2
+auser_name 3
+#user_session_id 1
+aUtcTime 12
+avendor_product 1
+65 more fields
+ Extract New Fields
+Time	Event
+Time	Event
+10/16/26
+1:07:29.000 PM	
+... 20 lines omitted ...
+        Host Version = 5.1.19041.1682
+        Host ID = b05609d8-f3f6-4ecf-b794-1cc506504c0c
+        Host Application = powershell &{netsh advfirewall firewall delete rule name="apt29-rule-1"; netsh advfirewall firewall delete rule name="apt29-rule-2"}
+        Engine Version = 5.1.19041.1682
+        Runspace ID = 2714150a-8657-48f1-a2fc-bba917615980
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:07:29.000 PM	
+... 24 lines omitted ...
+OriginalFileName: netsh.exe
+CommandLine: "C:\Windows\system32\netsh.exe" advfirewall firewall delete rule name=apt29-rule-2
+CurrentDirectory: C:\Windows\system32\
+... 8 lines omitted ...
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentCommandLine: powershell &{netsh advfirewall firewall delete rule name=\"apt29-rule-1\"; netsh advfirewall firewall delete rule name=\"apt29-rule-2\"}
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:07:29.000 PM	
+10/16/2026 01:07:29 PM
+... 18 lines omitted ...
+Process Information:
+	Process ID:	0x3358
+	Process Name:	C:\Windows\System32\netsh.exe
+	Exit Status:	0x0
+Show all 23 lines
+host = br-win10-1source = WinEventLog:Securitysourcetype = WinEventLog
+10/16/26
+1:07:29.000 PM	
+10/16/2026 01:07:29 PM
+... 24 lines omitted ...
+Process Information:
+	New Process ID:		0x3358
+	New Process Name:	C:\Windows\System32\netsh.exe
+	Token Elevation Type:	%%1936
+Show all 41 lines
+host = br-win10-1source = WinEventLog:Securitysourcetype = WinEventLog
+10/16/26
+1:07:29.000 PM	
+10/16/2026 01:07:29 PM
+... 18 lines omitted ...
+Process Information:
+	Process ID:	0x2bbc
+	Process Name:	C:\Windows\System32\netsh.exe
+	Exit Status:	0x0
+Show all 23 lines
+host = br-win10-1source = WinEventLog:Securitysourcetype = WinEventLog
+10/16/26
+1:07:28.000 PM	
+... 13 lines omitted ...
+Keywords=None
+Message=Creating Scriptblock text (1 of 1):
+{netsh advfirewall firewall delete rule name="apt29-rule-1"; netsh advfirewall firewall delete rule name="apt29-rule-2"}
+
+ScriptBlock ID: 16c023a5-d31b-44d2-9c18-16b9f4bad511
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:07:28.000 PM	
+... 13 lines omitted ...
+Keywords=None
+Message=Creating Scriptblock text (1 of 1):
+&{netsh advfirewall firewall delete rule name="apt29-rule-1"; netsh advfirewall firewall delete rule name="apt29-rule-2"}
+
+ScriptBlock ID: 0951f3e9-16ca-410b-80a5-7b0fad188ae0
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:07:28.000 PM	
+... 24 lines omitted ...
+OriginalFileName: netsh.exe
+CommandLine: "C:\Windows\system32\netsh.exe" advfirewall firewall delete rule name=apt29-rule-1
+CurrentDirectory: C:\Windows\system32\
+... 8 lines omitted ...
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentCommandLine: powershell &{netsh advfirewall firewall delete rule name=\"apt29-rule-1\"; netsh advfirewall firewall delete rule name=\"apt29-rule-2\"}
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:07:28.000 PM	
+... 23 lines omitted ...
+Company: Microsoft Corporation
+OriginalFileName: PowerShell.EXE
+CommandLine: powershell &{netsh advfirewall firewall delete rule name=\"apt29-rule-1\"; netsh advfirewall firewall delete rule name=\"apt29-rule-2\"}
+CurrentDirectory: C:\Windows\system32\
+User: NT AUTHORITY\SYSTEM
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:07:28.000 PM	
+10/16/2026 01:07:28 PM
+... 24 lines omitted ...
+Process Information:
+	New Process ID:		0x2bbc
+	New Process Name:	C:\Windows\System32\netsh.exe
+	Token Elevation Type:	%%1936
+Show all 41 lines
+host = br-win10-1source = WinEventLog:Securitysourcetype = WinEventLog
+10/16/26
+1:06:28.000 PM	
+10/16/2026 01:06:28 PM
+... 18 lines omitted ...
+Process Information:
+	Process ID:	0x13c0
+	Process Name:	C:\Windows\System32\auditpol.exe
+	Exit Status:	0x0
+Show all 23 lines
+host = br-win10-1source = WinEventLog:Securitysourcetype = WinEventLog
+10/16/26
+1:06:28.000 PM	
+... 19 lines omitted ...
+Image: C:\Windows\System32\auditpol.exe
+... 4 lines omitted ...
+OriginalFileName: AUDITPOL.EXE
+CommandLine: "C:\Windows\system32\auditpol.exe" /set "/category:Detailed Tracking" /success:enable /failure:enable
+CurrentDirectory: C:\Windows\system32\
+... 9 lines omitted ...
+ParentCommandLine: powershell &{auditpol /set /category:\"Detailed Tracking\" /success:enable /failure:enable}
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:06:28.000 PM	
+10/16/2026 01:06:28 PM
+... 19 lines omitted ...
+        Host Version = 5.1.19041.1682
+        Host ID = 7d7087d6-36e0-4d0c-899e-266ff3ff4a5f
+        Host Application = powershell &{auditpol /set /category:"Detailed Tracking" /success:enable /failure:enable}
+        Engine Version = 5.1.19041.1682
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:06:28.000 PM	
+10/16/2026 01:06:28 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+{auditpol /set /category:"Detailed Tracking" /success:enable /failure:enable}
+
+ScriptBlock ID: f4c9809b-95ed-476c-9627-297577977b55
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:06:28.000 PM	
+10/16/2026 01:06:28 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+&{auditpol /set /category:"Detailed Tracking" /success:enable /failure:enable}
+
+ScriptBlock ID: 15177df5-4245-408f-b9a6-85a136fc94f5
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:06:27.000 PM	
+10/16/2026 01:06:27 PM
+... 22 lines omitted ...
+Company: Microsoft Corporation
+OriginalFileName: PowerShell.EXE
+CommandLine: powershell &{auditpol /set /category:\"Detailed Tracking\" /success:enable /failure:enable}
+CurrentDirectory: C:\Windows\system32\
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:47.000 PM	
+... 21 lines omitted ...
+# what is passed in and changes them if neccessary using netsh
+# commands. We use netsh commands instead of the powershell
+... 1 line omitted ...
+function Get-NetshRule {
+... 88 lines omitted ...
+  $HttpRules = Get-NetshRule -RuleName $HttpRuleName
+  $HttpsRules = Get-NetshRule -RuleName $HttpsRuleName
+Show all 161 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:47.000 PM	
+... 19 lines omitted ...
+Image: C:\Windows\System32\netsh.exe
+... 3 lines omitted ...
+Company: Microsoft Corporation
+OriginalFileName: netsh.exe
+CommandLine: "C:\Windows\system32\netsh.exe" advfirewall firewall show rule status=enabled "name=Windows Remote Management (HTTPS-In)"
+CurrentDirectory: C:\Windows\system32\
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:46.000 PM	
+... 19 lines omitted ...
+Image: C:\Windows\System32\netsh.exe
+... 3 lines omitted ...
+Company: Microsoft Corporation
+OriginalFileName: netsh.exe
+CommandLine: "C:\Windows\system32\netsh.exe" advfirewall firewall show rule status=enabled "name=Windows Remote Management (HTTP-In)"
+CurrentDirectory: C:\Windows\system32\
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:46.000 PM	
+... 15 lines omitted ...
+function Get-NetshRule {
+  Param (
+... 3 lines omitted ...
+  # Get all enabled rules
+  $Rules = netsh advfirewall firewall show rule status=enabled name="$RuleName"
+  # Check if rules are returened
+Show all 73 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:46.000 PM	
+... 19 lines omitted ...
+# what is passed in and changes them if neccessary using netsh
+# commands. We use netsh commands instead of the powershell
+... 1 line omitted ...
+function Get-NetshRule {
+... 88 lines omitted ...
+  $HttpRules = Get-NetshRule -RuleName $HttpRuleName
+  $HttpsRules = Get-NetshRule -RuleName $HttpsRuleName
+Show all 133 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+1:05:46.000 PM	
+... 21 lines omitted ...
+# what is passed in and changes them if neccessary using netsh
+# commands. We use netsh commands instead of the powershell
+... 1 line omitted ...
+function Get-NetshRule {
+... 88 lines omitted ...
+  $HttpRules = Get-NetshRule -RuleName $HttpRuleName
+  $HttpsRules = Get-NetshRule -RuleName $HttpsRuleName
+Show all 142 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:32.000 PM	
+... 20 lines omitted ...
+        Host Version = 5.1.19041.1682
+        Host ID = 62f395b4-158d-4315-afa8-d29fb3d0868a
+        Host Application = powershell &{netsh advfirewall firewall add rule name="apt29-rule-1" protocol=UDP dir=out localport=137 action=block; netsh advfirewall firewall add rule name="apt29-rule-2" protocol=UDP dir=out localport=53 action=block}
+        Engine Version = 5.1.19041.1682
+        Runspace ID = 02831501-ff35-450d-8cff-3f14066aadc5
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:32.000 PM	
+... 13 lines omitted ...
+Keywords=None
+Message=Creating Scriptblock text (1 of 1):
+{netsh advfirewall firewall add rule name="apt29-rule-1" protocol=UDP dir=out localport=137 action=block; netsh advfirewall firewall add rule name="apt29-rule-2" protocol=UDP dir=out localport=53 action=block}
+
+ScriptBlock ID: 5d555b49-6574-480d-bd3d-09b9ed6ce324
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:32.000 PM	
+... 13 lines omitted ...
+Keywords=None
+Message=Creating Scriptblock text (1 of 1):
+&{netsh advfirewall firewall add rule name="apt29-rule-1" protocol=UDP dir=out localport=137 action=block; netsh advfirewall firewall add rule name="apt29-rule-2" protocol=UDP dir=out localport=53 action=block}
+
+ScriptBlock ID: 25aedf05-7d53-4178-bc40-23eedcc4096b
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:32.000 PM	
+... 24 lines omitted ...
+OriginalFileName: netsh.exe
+CommandLine: "C:\Windows\system32\netsh.exe" advfirewall firewall add rule name=apt29-rule-2 protocol=UDP dir=out localport=53 action=block
+CurrentDirectory: C:\Windows\system32\
+... 8 lines omitted ...
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentCommandLine: powershell &{netsh advfirewall firewall add rule name=\"apt29-rule-1\" protocol=UDP dir=out localport=137 action=block; netsh advfirewall firewall add rule name=\"apt29-rule-2\" protocol=UDP dir=out localport=53 action=block}
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:32.000 PM	
+... 24 lines omitted ...
+OriginalFileName: netsh.exe
+CommandLine: "C:\Windows\system32\netsh.exe" advfirewall firewall add rule name=apt29-rule-1 protocol=UDP dir=out localport=137 action=block
+CurrentDirectory: C:\Windows\system32\
+... 8 lines omitted ...
+ParentImage: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+ParentCommandLine: powershell &{netsh advfirewall firewall add rule name=\"apt29-rule-1\" protocol=UDP dir=out localport=137 action=block; netsh advfirewall firewall add rule name=\"apt29-rule-2\" protocol=UDP dir=out localport=53 action=block}
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:32.000 PM	
+... 23 lines omitted ...
+Company: Microsoft Corporation
+OriginalFileName: PowerShell.EXE
+CommandLine: powershell &{netsh advfirewall firewall add rule name=\"apt29-rule-1\" protocol=UDP dir=out localport=137 action=block; netsh advfirewall firewall add rule name=\"apt29-rule-2\" protocol=UDP dir=out localport=53 action=block}
+CurrentDirectory: C:\Windows\system32\
+User: NT AUTHORITY\SYSTEM
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:01.000 PM	
+... 19 lines omitted ...
+Image: C:\Windows\System32\auditpol.exe
+... 4 lines omitted ...
+OriginalFileName: AUDITPOL.EXE
+CommandLine: "C:\Windows\system32\auditpol.exe" /set "/category:Detailed Tracking" /success:disable /failure:disable
+CurrentDirectory: C:\Windows\system32\
+... 9 lines omitted ...
+ParentCommandLine: powershell &{auditpol /set /category:\"Detailed Tracking\" /success:disable /failure:disable}; echo \" \"
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:01.000 PM	
+10/16/2026 12:59:01 PM
+... 20 lines omitted ...
+        Host Version = 5.1.19041.1682
+        Host ID = 9e50d164-f2af-47bd-8387-b247149b8029
+        Host Application = powershell &{auditpol /set /category:"Detailed Tracking" /success:disable /failure:disable}; echo " "
+        Engine Version = 5.1.19041.1682
+Show all 38 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:01.000 PM	
+10/16/2026 12:59:01 PM
+... 20 lines omitted ...
+        Host Version = 5.1.19041.1682
+        Host ID = 9e50d164-f2af-47bd-8387-b247149b8029
+        Host Application = powershell &{auditpol /set /category:"Detailed Tracking" /success:disable /failure:disable}; echo " "
+        Engine Version = 5.1.19041.1682
+Show all 38 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:01.000 PM	
+10/16/2026 12:59:01 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+{auditpol /set /category:"Detailed Tracking" /success:disable /failure:disable}
+
+ScriptBlock ID: ba63a59e-e8dd-4922-91fd-6aee91c476a8
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:01.000 PM	
+10/16/2026 12:59:01 PM
+... 13 lines omitted ...
+Message=Creating Scriptblock text (1 of 1):
+&{auditpol /set /category:"Detailed Tracking" /success:disable /failure:disable}; echo " "
+
+ScriptBlock ID: ed872805-b124-4405-a188-643362017665
+Show all 19 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-PowerShell/Operationalsourcetype = WinEventLog
+10/16/26
+12:59:00.000 PM	
+10/16/2026 12:59:00 PM
+... 22 lines omitted ...
+Company: Microsoft Corporation
+OriginalFileName: PowerShell.EXE
+CommandLine: powershell &{auditpol /set /category:\"Detailed Tracking\" /success:disable /failure:disable}; echo \" \"
+CurrentDirectory: C:\Windows\system32\
+Show all 37 lines
+host = br-win10-1source = WinEventLog:Microsoft-Windows-Sysmon/Operationalsourcetype = WinEventLog
