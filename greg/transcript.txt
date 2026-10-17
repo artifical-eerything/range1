@@ -1,0 +1,79 @@
+﻿**********************
+Windows PowerShell transcript start
+Start time: 20261017105800
+Username: WIN-HUNT-11\Administrator
+RunAs User: WIN-HUNT-11\Administrator
+Configuration Name: 
+Machine: WIN-HUNT-11 (Microsoft Windows NT 10.0.19045.0)
+Host Application: C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe
+Process ID: 8544
+PSVersion: 5.1.19041.1682
+PSEdition: Desktop
+PSCompatibleVersions: 1.0, 2.0, 3.0, 4.0, 5.0, 5.1.19041.1682
+BuildVersion: 10.0.19041.1682
+CLRVersion: 4.0.30319.42000
+WSManStackVersion: 3.0
+PSRemotingProtocolVersion: 2.3
+SerializationVersion: 1.1.0.1
+**********************
+Transcript started, output file is \\site-file\Share\Metro State\Cyber Ops\Win-hunt-11 dump (greg)\br-win10-1_20261017_1057\transcript.txt
+PS C:\Users\Administrator> # DC logon evidence for charley.fritz
+PS C:\Users\Administrator> Get-WinEvent -ComputerName site-dc -Credential $c -LogName Security -MaxEvents 500 -FilterXPath "*[System[(EventID=4624 or EventID=4768)] and EventData[Data[@Name='TargetUserName']='charley.fritz']]" |
+ Select TimeCreated,Id,@{n='LogonType';e={if($_.Id -eq 4624){$_.Properties[8].Value}}},@{n='IP';e={if($_.Id -eq 4624){$_.Properties[18].Value}else{$_.Properties[9].Value}}} |
+ Export-Csv "$E\DC_charley.fritz_logons.csv" -NoType
+PS C:\Users\Administrator> # Live state from br-win10-1
+PS C:\Users\Administrator> $q = [ordered]@{
+ processes = { Get-CimInstance Win32_Process | Select ProcessId,ParentProcessId,Name,ExecutablePath,CommandLine,CreationDate }
+ tcp       = { Get-NetTCPConnection | Select LocalAddress,LocalPort,RemoteAddress,RemotePort,State,OwningProcess,@{n='Proc';e={(Get-Process -Id $_.OwningProcess -EA 0).Path}} }
+ services  = { Get-CimInstance Win32_Service | Select Name,State,StartMode,StartName,PathName }
+ tasks     = { Get-ScheduledTask | Select TaskName,TaskPath,State,Author,@{n='Action';e={($_.Actions|%{"$($_.Execute) $($_.Arguments)"}) -join '; '}} }
+ users     = { Get-LocalUser | Select Name,Enabled,LastLogon,PasswordLastSet }
+ admins    = { Get-LocalGroupMember Administrators | Select Name,ObjectClass,PrincipalSource }
+ dns       = { Get-DnsClientCache | Select Entry,Data,TimeToLive }
+ staging   = { Get-ChildItem C:\Users\Public,C:\ProgramData,C:\Windows\Temp,C:\Users\*\AppData\Local\Temp,C:\Users\*\Downloads -Recurse -File -Force -EA 0 | Select FullName,Length,CreationTime,LastWriteTime }
+ pshistory = { Get-ChildItem C:\Users\*\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt -EA 0 | % {[pscustomobject]@{File=$_.FullName;Content=(Get-Content $_.FullName -Raw)}} }
+}
+PS C:\Users\Administrator> foreach($k in $q.Keys){ "Collecting $k..."; Invoke-Command $s $q[$k] | Export-Csv "$O\$k.csv" -NoType }
+Collecting processes...
+Collecting tcp...
+Collecting services...
+Collecting tasks...
+Collecting users...
+Collecting admins...
+Collecting dns...
+Collecting staging...
+Collecting pshistory...
+PS C:\Users\Administrator> Invoke-Command $s { Get-ItemProperty 'HKLM:\Software\Microsoft\Windows\CurrentVersion\Run*','Registry::HKEY_USERS\*\Software\Microsoft\Windows\CurrentVersion\Run*' -EA 0 } | Out-File "$O\runkeys.txt"
+PS C:\Users\Administrator> # Event logs (staged in target's C:\Windows\Temp\ir, then pulled back)
+PS C:\Users\Administrator> Invoke-Command $s { New-Item C:\Windows\Temp\ir -ItemType Directory -Force | Out-Null
+ foreach($l in 'Security','System','Application','Windows PowerShell','Microsoft-Windows-PowerShell/Operational','Microsoft-Windows-Sysmon/Operational','Microsoft-Windows-TaskScheduler/Operational','Microsoft-Windows-TerminalServices-LocalSessionManager/Operational','Microsoft-Windows-Windows Defender/Operational'){
+  wevtutil epl "$l" "C:\Windows\Temp\ir\$($l -replace '[\\/ ]','_').evtx" 2>$null } }
+PS C:\Users\Administrator> Copy-Item -FromSession $s C:\Windows\Temp\ir\*.evtx -Destination "$O\evtx"
+PS C:\Users\Administrator> Copy-Item -FromSession $s C:\Windows\Prefetch\*.pf -Destination "$O\prefetch"
+PS C:\Users\Administrator> # Autoruns
+PS C:\Users\Administrator> Copy-Item "C:\Tools\sysinternals\autorunsc64.exe" -ToSession $s -Destination C:\Windows\Temp\ir\
+PS C:\Users\Administrator> Invoke-Command $s { & C:\Windows\Temp\ir\autorunsc64.exe -accepteula -nobanner -a * -c -h -s } | Out-File "$O\autoruns.csv"
+PS C:\Users\Administrator> # Integrity hashes
+PS C:\Users\Administrator> Get-ChildItem $O -Recurse -File | Get-FileHash -Algorithm SHA256 | Export-Csv "$E\$($T)_hashes.csv" -NoType
+Get-FileHash : The file '\\site-file\Share\Metro State\Cyber Ops\Win-hunt-11 dump 
+(greg)\br-win10-1_20261017_1057\transcript.txt' cannot be read: The process cannot access the file 
+'\\site-file\Share\Metro State\Cyber Ops\Win-hunt-11 dump (greg)\br-win10-1_20261017_1057\transcript.txt' because it is 
+being used by another process.
+At line:1 char:35
++ ... -ChildItem $O -Recurse -File | Get-FileHash -Algorithm SHA256 | Expor ...
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\site-file\Sha...\transcript.txt:PSObject) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : FileReadError,Get-FileHash
+Get-FileHash : The file '\\site-file\Share\Metro State\Cyber Ops\Win-hunt-11 dump (greg)\br-win10-1_20261017_1057\transcript.txt' cannot be read: The process cannot access the file
+'\\site-file\Share\Metro State\Cyber Ops\Win-hunt-11 dump (greg)\br-win10-1_20261017_1057\transcript.txt' because it is being used by another process.
+At line:1 char:35
++ ... -ChildItem $O -Recurse -File | Get-FileHash -Algorithm SHA256 | Expor ...
++                                    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          : ReadError: (\\site-file\Sha...\transcript.txt:PSObject) [Write-Error], WriteErrorException
+    + FullyQualifiedErrorId : FileReadError,Get-FileHash
+
+PS C:\Users\Administrator> Stop-Transcript
+**********************
+Windows PowerShell transcript end
+End time: 20261017110501
+**********************

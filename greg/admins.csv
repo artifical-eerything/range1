@@ -1,0 +1,8 @@
+"Name","ObjectClass","PrincipalSource","PSComputerName","RunspaceId","PSShowComputerName"
+"BR-WIN10-1\Administrator","User","Local","br-win10-1","ca53a7d9-37f4-476d-8dfe-be10590e4496","True"
+"BR-WIN10-1\b-admin0","User","Local","br-win10-1","ca53a7d9-37f4-476d-8dfe-be10590e4496","True"
+"BR-WIN10-1\i-admin0","User","Local","br-win10-1","ca53a7d9-37f4-476d-8dfe-be10590e4496","True"
+"BR-WIN10-1\o-admin0","User","Local","br-win10-1","ca53a7d9-37f4-476d-8dfe-be10590e4496","True"
+"BR-WIN10-1\r-admin0","User","Local","br-win10-1","ca53a7d9-37f4-476d-8dfe-be10590e4496","True"
+"site\Administrator","User","ActiveDirectory","br-win10-1","ca53a7d9-37f4-476d-8dfe-be10590e4496","True"
+"site\Domain Admins","Group","ActiveDirectory","br-win10-1","ca53a7d9-37f4-476d-8dfe-be10590e4496","True"

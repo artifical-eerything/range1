@@ -1,0 +1,72 @@
+"File","Content","PSComputerName","RunspaceId","PSShowComputerName"
+"C:\Users\administrator.BR-WIN10-1\AppData\Roaming\Microsoft\Windows\PowerShell\PSReadLine\ConsoleHost_history.txt","# Check if the startup script ran at all
+Get-WinEvent -LogName ""Microsoft-Windows-GroupPolicy/Operational"" | `
+    Select -First 20 TimeCreated, Message | Format-List
+# Check script execution policy
+Get-ExecutionPolicy -List
+# Check if built-in WinRM rules are disabled
+Get-NetFirewallRule | Where-Object { `
+    $_.DisplayName -like ""Windows Remote Management*"" `
+} | Select DisplayName, Enabled
+# Check WinRM listener
+Get-WSManInstance -ResourceURI winrm/config/listener -Enumerate
+# Check network profiles
+Get-NetConnectionProfile
+$startupScript = @'`
+Enable-PSRemoting -Force -SkipNetworkProfileCheck`
+`
+# Disable ALL built-in WinRM rules`
+Get-NetFirewallRule | Where-Object { `
+    $_.DisplayName -like ""Windows Remote Management*"" -and`
+    $_.DisplayName -notlike ""Allow WinRM*""`
+} | Disable-NetFirewallRule`
+`
+# Force all unidentified networks to private via registry`
+$regPath = ""HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\CurrentVersion\NetworkList\Signatures\Unmanaged""`
+Get-ChildItem $regPath -ErrorAction SilentlyContinue | ForEach-Object {`
+    Set-ItemProperty -Path $_.PSPath -Name ""Category"" -Value 1`
+}`
+`
+# Also set via NLA service registry`
+Set-ItemProperty -Path ""HKLM:\SYSTEM\CurrentControlSet\Control\Network\NetworkLocationWizard"" ``
+    -Name ""HideWizard"" -Value 1 -ErrorAction SilentlyContinue`
+`
+Set-Item WSMan:\localhost\Client\TrustedHosts -Value ""*"" -Force`
+Set-Item WSMan:\localhost\Service\AllowUnencrypted -Value $true`
+Restart-Service WinRM -Force`
+'@
+Set-Content -Path ""C:\Windows\SYSVOL\sysvol\site.lan\Policies\Scripts\EnableWinRM.ps1"" -Value $startupScript
+Write-Host ""[+] Script updated""
+Get-Content ""C:\Windows\SYSVOL\sysvol\site.lan\Policies\Scripts\EnableWinRM.ps1""
+# Check when startup script last ran
+Get-WinEvent -LogName ""Microsoft-Windows-GroupPolicy/Operational"" | `
+    Where-Object { $_.Message -like ""*Startup script*"" } |`
+    Select -First 5 TimeCreated, Message
+# Check firewall rules
+Get-NetFirewallRule | Where-Object { `
+    $_.DisplayName -like ""Windows Remote Management*"" `
+} | Select DisplayName, Enabled
+# Check network profiles
+Get-NetConnectionProfile
+Get-NetFirewallRule | Where-Object { `
+    $_.DisplayName -like ""Windows Remote Management*"" `
+} | Select DisplayName, Enabled
+Get-NetFirewallRule | Where-Object { `
+    $_.DisplayName -eq ""Windows Remote Management (HTTP-In)"" `
+} | Select DisplayName, Enabled, Profile, PolicyStoreSource, PolicyStoreSourceType
+Get-NetFirewallRule | Where-Object { `
+    $_.DisplayName -like ""*WinRM*"" -or $_.DisplayName -like ""*5985*""`
+} | Select DisplayName, Enabled, Profile, PolicyStoreSourceType
+netsh wfp show filters
+$xml = [xml](Get-Content ""C:\Users\administrator.BR-WIN10-1\filters.xml"")
+$xml.wfpdiag.filters.item | Where-Object { `
+    $_.displayData.description -like ""*5985*""`
+} | ForEach-Object {`
+    Write-Host ""Description: $($_.displayData.description)""`
+    Write-Host ""Action: $($_.action.type)""`
+    Write-Host ""---""`
+}
+Get-NetFirewallRule | Where-Object { `
+    $_.DisplayName -like ""Windows Remote Management*"" `
+} | Select DisplayName, Enabled, Profile
+","br-win10-1","ca53a7d9-37f4-476d-8dfe-be10590e4496","True"
